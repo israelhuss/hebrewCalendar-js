@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon-16x16.png">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+
+  <div class="calendar" id="calendar">
+
+    <div class="cal-control">
+      <div class="ctrl btn">
+          <div class="previous hvr" onclick="prvMonth()">&#8249;</div>
+          <div class="next hvr" onclick="nextMonth()">&#8250;</div>
+      </div>
+      <div class="go-to-today btn hvr">Today</div>
+
+      <div class="english">
+          <div class="month" id="curMonth"></div>
+          <div class="year" id="curYear"></div>
+      </div>
+      <div class="hebrew">
+          <div id="HYear" class="heb-year"></div>
+          <div id="HMonth" class="heb-month"></div>
+      </div>
+
+      <div class="btn view">
+          <div class="month-btn hvr active" onclick="changeTheme(this)">Month</div>
+          <div class="week-btn hvr" onclick="changeTheme(this)">Week</div>
+          <div class="day-btn hvr" onclick="changeTheme(this)">Day</div>
+      </div>
+  </div>
+
+    <div class="calendar-dates">
+      <div class="days_header">
+        <div class="label">Sunday</div>
+        <div class="label">Monday</div>
+        <div class="label">Tuesday</div>
+        <div class="label">Wednesday</div>
+        <div class="label">Thursday</div>
+        <div class="label">Friday</div>
+        <div class="label">Saturday</div>
+      </div>
+    </div>
+
+
+    <div id="calendarDays" class="days month">
+
+    </div>
+
+  </div>
+
+  <script src="src/hebcal.noloc.js"></script>
+  <script src="src/script.js" charset="utf-8"></script>
+</body>
+
+</html>
